@@ -6,10 +6,11 @@ Workspace Rust Base provides rust toolchain and source code in a docker containe
 * `cargo-fmt`
 * `racer`
 * `rls`
-* `rustc`
-* `rustdoc`
 * `rust-gdb`
 * `rust-lldb`
+* `rustc`
+* `rustdoc`
+* `rustfmt`
 
 ## Getting Started
 
