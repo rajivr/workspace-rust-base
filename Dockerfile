@@ -20,15 +20,15 @@ RUN \
   chmod 440 /etc/sudoers.d/docker && \
   \
   # install rust
-  curl -L https://static.rust-lang.org/dist/rust-1.18.0-x86_64-unknown-linux-gnu.tar.gz -o /tmp/docker-build/rust-1.18.0-x86_64-unknown-linux-gnu.tar.gz && \
-  curl -L https://static.rust-lang.org/dist/rustc-1.18.0-src.tar.gz -o /tmp/docker-build/rustc-1.18.0-src.tar.gz && \
+  curl -L https://static.rust-lang.org/dist/rust-1.20.0-x86_64-unknown-linux-gnu.tar.gz -o /tmp/docker-build/rust-1.20.0-x86_64-unknown-linux-gnu.tar.gz && \
+  curl -L https://static.rust-lang.org/dist/rustc-1.20.0-src.tar.gz -o /tmp/docker-build/rustc-1.20.0-src.tar.gz && \
   pushd /tmp/docker-build && \
-  tar zxvf rust-1.18.0-x86_64-unknown-linux-gnu.tar.gz && \
-  pushd rust-1.18.0-x86_64-unknown-linux-gnu && \
+  tar zxvf rust-1.20.0-x86_64-unknown-linux-gnu.tar.gz && \
+  pushd rust-1.20.0-x86_64-unknown-linux-gnu && \
   ./install.sh && \
   popd && \
-  tar zxvf rustc-1.18.0-src.tar.gz && \
-  pushd rustc-1.18.0-src && \
+  tar zxvf rustc-1.20.0-src.tar.gz && \
+  pushd rustc-1.20.0-src && \
   mkdir -p /usr/local/lib/rustlib/src/rust && \
   mv src /usr/local/lib/rustlib/src/rust && \
   popd && \
